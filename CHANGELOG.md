@@ -1,4 +1,5 @@
-# Changelog for `nousad-http`
+# Changelog for `hethet-api`
 
+## 0.0.1 - 2024-09-29
 
-## 1.0.0 - 2024-09-29
+- First Update

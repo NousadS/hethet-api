@@ -1,0 +1,55 @@
+name:                hethet-api
+version:             0.0.1
+github:              "NousadS/hethet-api"
+license:             MIT
+author:              "Nousad"
+maintainer:          "nousad.cat@gmail.com"
+copyright:           "2024 Nousad"
+
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+synopsis:            PetPet API on Haskell.
+category:            Web
+
+description:         See README.md
+
+dependencies:
+- base >= 4.7 && < 5
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+library:
+  source-dirs: src
+
+executables:
+  hethet-api-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hethet-api
+
+tests:
+  hethet-api-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hethet-api

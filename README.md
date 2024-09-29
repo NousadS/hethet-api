@@ -1,1 +1,1 @@
-# Nousad test Haskell HTTP project
+# HetHet API

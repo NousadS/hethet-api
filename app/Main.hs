@@ -1,6 +1,8 @@
 module Main (main) where
 
-import Lib
+-- import Lib
+import PetPet
 
 main :: IO ()
-main = runPetPetAPI
+main = do
+    make "./img/pet0.gif" "./src/pet0.gif"

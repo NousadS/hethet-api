@@ -22,6 +22,10 @@ dependencies:
 - warp >= 3.3.31
 - bytestring >= 0.11.5.3
 - case-insensitive >= 1.2.1.0
+- text
+- split
+- JuicyPixels >= 3.3.0
+- vector >= 0.12.0.0
 
 ghc-options:
 - -Wall

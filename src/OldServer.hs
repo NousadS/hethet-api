@@ -1,8 +1,13 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Lib ( 
+-- Сервер, написан ручками, работает
+
+module OldServer ( 
     runAPI
 ) where
+
+import           Control.Monad.Trans.Resource
+
 
 import Network.Wai
 import Network.HTTP.Types (status200)
@@ -19,7 +24,6 @@ import qualified Data.Text.Encoding as Text.Encoding
 
 make_text_response :: (Response -> b) -> [Char] -> b
 make_text_response respond text = respond $ responseLBS status200 [(mk (BS.pack "Content-Type"), BS.pack "text/plain")] (LBS.pack text)
-
 
 application :: Application
 application request respond = do

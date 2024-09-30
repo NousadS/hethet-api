@@ -5,4 +5,4 @@ import PetPet
 
 main :: IO ()
 main = do
-    make "./img/pet0.gif" "./src/pet0.gif"
+    make "img/pet0.gif" "img/output.gif"
